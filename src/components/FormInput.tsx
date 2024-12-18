@@ -34,8 +34,8 @@ export default function FormInput({
         name={name}
         type={isPassword && showPassword ? "text" : type}
         defaultValue={defaultValue}
-        className={`w-full pl-${
-          capsLock || type === 'search' ? "10" : "4"
+        className={`w-full ${
+          capsLock || type === "search" ? "pl-10" : "pl-4"
         } pr-10 outline-none border rounded`}
       />
 
